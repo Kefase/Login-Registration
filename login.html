@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="width: 100% oveflow:hidden">
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="img/cover.jpg" alt="">
+            <h1>Welcome !</h1>
+            <h3>Already have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login</h1>
+            <form action="#bookings" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Username" required="">
+                <input type="email" name="user-email" class="input-box" placeholder="Email" onClick="myFunction()"  pattern="^[a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,15})$"  required="">
+                <p id="demo"></p>
+                <input type="password" name="user-pass" class="input-box" placeholder="Password" required="">
+                <input type="submit" name="login-btn" class="btn" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="img/cover.jpg" alt="">
+            <h1>Welcome !</h1>
+            <h3>Don't have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Register</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Register</h1>
+            <form action="#bookings" method="post">
+                <input type="text" name="full-names" class="input-box" placeholder="Full Names" required="">
+                <input type="text" name="user-name" class="input-box" placeholder="Username" required="">
+                <input type="text" name="nationality" class="input-box" placeholder="Nationality" required="">
+                <input type="text" name="national-id" class="input-box" placeholder="National Identity Number" required="" >
+                <input type="date" name="date-of-birth" class="input-box" placeholder="Date Of Birth" required="" >
+                <input type="email" name="user-email" class="input-box" placeholder="Email" onClick="myFunction()"  pattern="^[a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,15})$"  required="" >
+                <input type="text" name="telephone" class="input-box" placeholder="Telephone" required="" >
+                <input type="password" name="user-pass" class="input-box" placeholder="Password" required="" >
+                <input type="submit" name="signup-btn" class="btn" value="Register" required="">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
